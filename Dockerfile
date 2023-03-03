@@ -36,5 +36,10 @@ RUN pip3 install -q -U --pre triton
 RUN pip3 install -q accelerate transformers ftfy bitsandbytes==0.35.0 gradio natsort safetensors xformers
 COPY prompt_to_text.py /workspace/stable_diffusion/prompt_to_text.py
 
-CMD ["echo", "hi shit"]
+RUN pip3 install runpod
+ADD whatever.py /workspace/whatever.py
+ADD test_input.json /workspace/test_input.json
+
+#CMD ["python", "-u", "/workspace/whatever.py"]
+CMD ["/bin/bash"]
 

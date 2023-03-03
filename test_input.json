@@ -1,0 +1,23 @@
+{
+  "input": {
+    "number": 1,
+    "data_urls": [
+      "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-001.JPG",
+      "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-002.JPG",
+      "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-003.JPG",
+      "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-004.JPG",
+      "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-005.JPG",
+      "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-006.JPG",
+      "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-007.JPG",
+      "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-008.JPG",
+      "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-009.JPG",
+      "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-010.JPG",
+      "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-011.JPG",
+      "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-012.JPG",
+      "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-013.JPG",
+      "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-014.JPG",
+      "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-015.JPG",
+      "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-016.JPG"
+    ]
+  }
+}
