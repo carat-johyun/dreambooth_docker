@@ -10,10 +10,8 @@ def is_even(job):
     if not isinstance(the_number, int):
         return {"error": "Silly human, you need to pass an integer."}
 
-    subprocess.run(["ls", "-l"])
-
     for data_url in data_urls:
-        subprocess.run(["wget", "-P", "/workspace/stable_diffusion/data/instance", data_url])
+        subprocess.run(["wget", "-P", "/tmp/stable_diffusion/data/instance", data_url])
         print(data_url)
 
     if the_number % 2 == 0:

@@ -2,7 +2,7 @@
     {
         "instance_prompt":"photo of sks person",
         "class_prompt":"photo of a person",
-        "instance_data_dir":"/workspace/stable_diffusion/data/instance",
-        "class_data_dir":"/workspace/stable_diffusion/data/class"
+        "instance_data_dir":"/tmp/stable_diffusion/data/instance",
+        "class_data_dir":"/tmp/stable_diffusion/data/class"
     }
 ]
