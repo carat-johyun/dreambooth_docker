@@ -8,6 +8,5 @@ COPY prompt_to_text.py /home/ubuntu/prompt_to_text.py
 COPY train.sh /home/ubuntu/train.sh
 COPY to_ckpt.sh /home/ubuntu/to_ckpt.sh
 
-#CMD ["python", "-u", "/home/ubuntu/whatever.py"]
-CMD ["/bin/bash"]
+CMD ["python", "-u", "/home/ubuntu/whatever.py"]
 

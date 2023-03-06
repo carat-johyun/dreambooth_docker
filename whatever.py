@@ -5,7 +5,10 @@ import datetime
 
 
 def push_ckpt():
-    s3 = boto3.client("s3")
+    s3 = boto3.client("s3",
+                      aws_access_key_id="AKIASELGVJXOKTZDSMP2",
+                      aws_secret_access_key="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",
+                      )
 
     date = datetime.datetime.today().strftime('%Y%m%d%H%M%S')
 
