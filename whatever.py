@@ -13,9 +13,30 @@ def push_ckpt():
     date = datetime.datetime.today().strftime('%Y%m%d%H%M%S')
 
     s3.upload_file(
-        Filename="/home/ubuntu/output/8/sks.ckpt",
+        Filename="/home/ubuntu/output/800/sks.ckpt",
         Bucket="carat-assets",
         Key="dreambooth/sks_" + date + ".ckpt",
+    )
+
+    s3.upload_file(
+        Filename="/home/ubuntu/output/800/samples/0.png",
+        Bucket="carat-assets",
+        Key="dreambooth/samples/" + date + "_0.png",
+    )
+    s3.upload_file(
+        Filename="/home/ubuntu/output/800/samples/1.png",
+        Bucket="carat-assets",
+        Key="dreambooth/samples/" + date + "_1.png",
+    )
+    s3.upload_file(
+        Filename="/home/ubuntu/output/800/samples/2.png",
+        Bucket="carat-assets",
+        Key="dreambooth/samples/" + date + "_2.png",
+    )
+    s3.upload_file(
+        Filename="/home/ubuntu/output/800/samples/3.png",
+        Bucket="carat-assets",
+        Key="dreambooth/samples/" + date + "_3.png",
     )
 
 
