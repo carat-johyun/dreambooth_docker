@@ -1,4 +1,4 @@
-prompt = "Portrait of sks person, high detail"
+prompt = "Portrait of asim person, high detail"
 negative_prompt = "ugly, old"
 num_samples = 2
 guidance_scale = 7.5
@@ -11,7 +11,7 @@ import torch
 from torch import autocast
 from diffusers import StableDiffusionPipeline, DDIMScheduler
 
-model_path = "/workspace/stable_diffusion/output/800"
+model_path = "/workspace/stable_diffusion/output/80"
 if 'pipe' not in locals():
     scheduler = DDIMScheduler(beta_start=0.00085, beta_end=0.012, beta_schedule="scaled_linear", clip_sample=False,
                               set_alpha_to_one=False)
