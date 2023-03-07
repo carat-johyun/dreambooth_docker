@@ -16,7 +16,7 @@ accelerate launch /home/ubuntu/train_dreambooth.py \
   --lr_warmup_steps=0 \
   --num_class_images=50 \
   --sample_batch_size=4 \
-  --max_train_steps=800 \
+  --max_train_steps=1600 \
   --save_interval=10000 \
   --save_sample_prompt="photo of asim person" \
   --concepts_list="/home/ubuntu/concepts_list.json"
