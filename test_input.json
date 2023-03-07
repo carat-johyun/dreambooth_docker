@@ -18,7 +18,7 @@
       "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-015.JPG",
       "https://carat-assets.s3.ap-northeast-2.amazonaws.com/dreambooth/johyun/sks-016.JPG"
     ],
-    "aws_access_key": "",
-    "aws_secret_access_key": ""
+    "access_key": "ss",
+    "secret_access_key": ""
   }
 }

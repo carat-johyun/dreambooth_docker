@@ -3,8 +3,6 @@ MAINTAINER johyun@carat.im
 
 RUN sudo pip uninstall torchvision -y
 RUN sudo pip install torchvision
-#RUN mkdir /home/ubuntu/data
-#RUN mkdir /home/ubuntu/data/instance
 
 COPY train_dreambooth.py /home/ubuntu/train_dreambooth.py
 COPY whatever.py /home/ubuntu/whatever.py

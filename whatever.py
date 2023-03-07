@@ -48,7 +48,7 @@ def is_even(job):
     job_input = job["input"]
     data_urls = job_input["data_urls"]
     aws_access_key = job_input["access_key"]
-    aws_secret_access_key = job_input["access_key"]
+    aws_secret_access_key = job_input["secret_access_key"]
 
     for idx in range(len(data_urls)):
         subprocess.run(
