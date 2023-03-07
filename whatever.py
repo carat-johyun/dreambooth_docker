@@ -15,28 +15,28 @@ def push_ckpt(access_key, secret_access_key):
     ckpt_path = "dreambooth/asim_" + date + ".ckpt"
 
     s3.upload_file(
-        Filename="/home/ubuntu/output/80/asim.ckpt",
+        Filename="/home/ubuntu/output/800/asim.ckpt",
         Bucket="carat-assets",
         Key=ckpt_path,
     )
 
     s3.upload_file(
-        Filename="/home/ubuntu/output/80/samples/0.png",
+        Filename="/home/ubuntu/output/800/samples/0.png",
         Bucket="carat-assets",
         Key="dreambooth/samples/" + date + "_0.png",
     )
     s3.upload_file(
-        Filename="/home/ubuntu/output/80/samples/1.png",
+        Filename="/home/ubuntu/output/800/samples/1.png",
         Bucket="carat-assets",
         Key="dreambooth/samples/" + date + "_1.png",
     )
     s3.upload_file(
-        Filename="/home/ubuntu/output/80/samples/2.png",
+        Filename="/home/ubuntu/output/800/samples/2.png",
         Bucket="carat-assets",
         Key="dreambooth/samples/" + date + "_2.png",
     )
     s3.upload_file(
-        Filename="/home/ubuntu/output/80/samples/3.png",
+        Filename="/home/ubuntu/output/800/samples/3.png",
         Bucket="carat-assets",
         Key="dreambooth/samples/" + date + "_3.png",
     )
