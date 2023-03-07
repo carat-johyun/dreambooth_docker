@@ -1,4 +1,4 @@
-accelerate launch /tmp/train_dreambooth.py \
+accelerate launch /home/ubuntu/train_dreambooth.py \
   --pretrained_model_name_or_path="stabilityai/stable-diffusion-2-1" \
   --pretrained_vae_name_or_path="stabilityai/sd-vae-ft-mse" \
   --output_dir="/home/ubuntu/output" \

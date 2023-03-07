@@ -4,10 +4,10 @@ import boto3
 import datetime
 
 
-def push_ckpt():
+def push_ckpt(access_key, secret_access_key):
     s3 = boto3.client("s3",
-                      aws_access_key_id="${{ secrets.AWS_ACCESS_KEY_ID }}",
-                      aws_secret_access_key="${{ secrets.AWS_SECRET_ACCESS_KEY }}",
+                      aws_access_key_id=access_key,
+                      aws_secret_access_key=secret_access_key,
                       )
 
     date = datetime.datetime.today().strftime('%Y%m%d%H%M%S')
@@ -47,19 +47,17 @@ def push_ckpt():
 def is_even(job):
     job_input = job["input"]
     data_urls = job_input["data_urls"]
-    the_number = job_input["number"]
-
-    if not isinstance(the_number, int):
-        return {"error": "Silly human, you need to pass an integer."}
+    aws_access_key = job_input["access_key"]
+    aws_secret_access_key = job_input["access_key"]
 
     for idx in range(len(data_urls)):
         subprocess.run(
-            ["wget", "-O", "/tmp/stable_diffusion/data/instance/asim (" + str(idx) + ").jpg", data_urls[idx]])
+            ["wget", "-O", "/tmp/stable_diffusion/data/instance/asim-" + str(idx) + ".jpg", data_urls[idx]])
 
     subprocess.run(["sh", "/home/ubuntu/train.sh"])
     subprocess.run(["sh", "/home/ubuntu/to_ckpt.sh"])
 
-    return push_ckpt()
+    return push_ckpt(aws_access_key, aws_secret_access_key)
 
 
 runpod.serverless.start({"handler": is_even})

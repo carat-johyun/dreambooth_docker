@@ -1,6 +1,12 @@
 FROM johyun/gpu_base:0.1
 MAINTAINER johyun@carat.im
 
+RUN sudo pip uninstall torchvision -y
+RUN sudo pip install torchvision
+#RUN mkdir /home/ubuntu/data
+#RUN mkdir /home/ubuntu/data/instance
+
+COPY train_dreambooth.py /home/ubuntu/train_dreambooth.py
 COPY whatever.py /home/ubuntu/whatever.py
 COPY test_input.json /home/ubuntu/test_input.json
 COPY concepts_list.json /home/ubuntu/concepts_list.json
