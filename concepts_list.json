@@ -1,7 +1,7 @@
 [
     {
-        "instance_prompt":"photo of asim person",
-        "class_prompt":"photo of a person",
+        "instance_prompt":"bibi style",
+        "class_prompt":"",
         "instance_data_dir":"/tmp/stable_diffusion/data/instance",
         "class_data_dir":"/tmp/stable_diffusion/data/class"
     }

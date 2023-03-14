@@ -12,7 +12,7 @@ def push_ckpt(access_key, secret_access_key):
 
     date = datetime.datetime.today().strftime('%Y%m%d%H%M%S')
 
-    ckpt_path = "dreambooth/asim_" + date + ".ckpt"
+    ckpt_path = "dreambooth/bibi_" + date + ".ckpt"
 
     s3.upload_file(
         Filename="/home/ubuntu/output/800/samples/0.png",
@@ -35,7 +35,7 @@ def push_ckpt(access_key, secret_access_key):
         Key="dreambooth/samples/" + date + "_3.png",
     )
     s3.upload_file(
-        Filename="/home/ubuntu/output/800/asim.ckpt",
+        Filename="/home/ubuntu/output/800/bibi.ckpt",
         Bucket="carat-assets",
         Key=ckpt_path,
     )
@@ -51,7 +51,7 @@ def is_even(job):
 
     for idx in range(len(data_urls)):
         subprocess.run(
-            ["wget", "-O", "/tmp/stable_diffusion/data/instance/asim-" + str(idx) + ".jpg", data_urls[idx]])
+            ["wget", "-O", "/tmp/stable_diffusion/data/instance/bibi-" + str(idx) + ".jpg", data_urls[idx]])
 
     subprocess.run(["sh", "/home/ubuntu/train.sh"])
     subprocess.run(["sh", "/home/ubuntu/to_ckpt.sh"])

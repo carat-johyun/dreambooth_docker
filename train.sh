@@ -18,5 +18,5 @@ accelerate launch /home/ubuntu/train_dreambooth.py \
   --sample_batch_size=4 \
   --max_train_steps=800 \
   --save_interval=10000 \
-  --save_sample_prompt="photo of asim person" \
+  --save_sample_prompt="bibi style" \
   --concepts_list="/home/ubuntu/concepts_list.json"

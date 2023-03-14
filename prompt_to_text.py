@@ -1,4 +1,4 @@
-prompt = "Portrait of asim person, high detail"
+prompt = "Portrait of person, bibi style, high detail"
 negative_prompt = "ugly, old"
 num_samples = 2
 guidance_scale = 7.5
