@@ -14,7 +14,7 @@ accelerate launch /home/ubuntu/train_dreambooth.py \
   --learning_rate=1e-6 \
   --lr_scheduler="constant" \
   --lr_warmup_steps=0 \
-  --num_class_images=400 \
+  --num_class_images=185 \
   --sample_batch_size=4 \
   --max_train_steps=800 \
   --save_interval=10000 \
