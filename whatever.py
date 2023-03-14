@@ -49,9 +49,9 @@ def is_even(job):
     aws_access_key = job_input["access_key"]
     aws_secret_access_key = job_input["secret_access_key"]
 
-    for idx in range(len(data_urls)):
-        subprocess.run(
-            ["wget", "-O", "/tmp/stable_diffusion/data/instance/bibi-" + str(idx) + ".jpg", data_urls[idx]])
+    # for idx in range(len(data_urls)):
+    #     subprocess.run(
+    #         ["wget", "-O", "/tmp/stable_diffusion/data/instance/bibi-" + str(idx) + ".jpg", data_urls[idx]])
 
     subprocess.run(["sh", "/home/ubuntu/train.sh"])
     subprocess.run(["sh", "/home/ubuntu/to_ckpt.sh"])
